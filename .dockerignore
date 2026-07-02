@@ -1,0 +1,28 @@
+# Git
+.git
+.gitignore
+
+# VS Code
+.vscode
+
+# Node modules
+backend/node_modules
+frontend/node_modules
+
+# Frontend build output
+frontend/dist
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment files
+frontend/.env
+backend/.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker files (optional)
+docker-compose.yml
