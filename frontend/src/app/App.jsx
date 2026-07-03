@@ -57,7 +57,7 @@ export default function App() {
     useEffect(() => {
         if (!joined) return
 
-        const backendUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:3000"
+        const backendUrl = import.meta.env.VITE_BACKEND_URL || window.location.origin
         const provider = new SocketIOProvider(backendUrl, "monaco", ydoc, { autoConnect: true })
         providerRef.current = provider
 
